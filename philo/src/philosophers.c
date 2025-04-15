@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philosophers.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 21:25:21 by francesca         #+#    #+#             */
-/*   Updated: 2025/04/10 10:45:32 by francesca        ###   ########.fr       */
+/*   Updated: 2025/04/15 14:07:13 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,17 @@ void	print_usage(void)
 \t\t[number_of_times_each_philosopher_must_eat]\n");
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-    t_data  data;
-    
-    if (check_args(argc, argv) == 1)
-        return (print_usage(), 1);
-    if (init(&data, argc, argv) == 1)
-        return (1);
+	t_data		data;
+
+	if (check_args(argc, argv) == 1)
+		return (print_usage(), 1);
+	if (init(&data, argc, argv) == 1)
+	{
+		return (1);
+	}
 	start_routine(&data);
 	free_all(&data);
-    return (0);
+	return (0);
 }

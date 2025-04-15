@@ -6,7 +6,7 @@
 /*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 11:27:49 by francesca         #+#    #+#             */
-/*   Updated: 2025/04/15 14:12:01 by fmontini         ###   ########.fr       */
+/*   Updated: 2025/04/15 14:20:12 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,8 @@ typedef struct s_data
 	int					meals_required;
 	int					someone_died;
 	t_fork				*forks;
-	pthread_mutex_t print_mutex; //
-	pthread_mutex_t death_mutex; //
+	pthread_mutex_t		print_mutex;
+	pthread_mutex_t		death_mutex;
 	t_philo				*philos;
 }						t_data;
 

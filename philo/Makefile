@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: francesca <francesca@student.42.fr>        +#+  +:+       +#+         #
+#    By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/17 14:23:25 by francesca         #+#    #+#              #
-#    Updated: 2025/04/11 14:44:26 by francesca        ###   ########.fr        #
+#    Updated: 2025/04/15 11:27:10 by fmontini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ NAME	=	philo
 
 CC		=	clang
 # compilation flags
-CFLAGS	=  -Wall -Werror -Wextra -pthread -g
+CFLAGS	=  -Wall -Werror -Wextra -pthread -g -gdwarf-4
 
 SRCS_DIR	=	src/
 OBJS_DIR	=	obj/
